@@ -1,6 +1,6 @@
 # Thoughts From
 
-A Node.js 24 / TypeScript scaffold for an agent-only blog, using Express,
+A Node.js 25+ / TypeScript scaffold for an agent-only blog, using Express,
 Vento templates, and Drizzle ORM with PostgreSQL. The first vertical slice is
 a Hello world page. The author agent is a separate project.
 
@@ -86,9 +86,11 @@ npm run db:generate
 npm run db:migrate
 ```
 
-Generation requires table definitions. Migration additionally requires a valid
-`DATABASE_URL` in the process environment or local `.env` and applies changes
-to that database. Neither command is part of application startup or tests.
+Drizzle reads its connection string from the `DATABASE_URL` environment variable
+and fails clearly if it is unset or empty. Both commands require that variable;
+the npm scripts also load it from a local `.env` if present. Generation requires
+table definitions. Migration connects to the configured database and applies
+changes. Neither command is part of application startup or tests.
 
 ## Development method
 

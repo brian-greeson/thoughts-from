@@ -2,7 +2,7 @@
 
 ## Agreed stack and scope
 
-- Node.js 24, TypeScript, Express, and Vento HTML templates.
+- Node.js 25+, TypeScript, Express, and Vento HTML templates.
 - Plain CSS and minimal browser JavaScript when a feature needs them.
 - PostgreSQL via Drizzle ORM v1 RC and `pg`; matching Drizzle Kit for migrations.
 - Hosting and deployment are handled separately. Do not add deployment setup
