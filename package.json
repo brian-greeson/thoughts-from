@@ -16,7 +16,7 @@
     "db:migrate": "node --env-file-if-exists=.env node_modules/drizzle-kit/bin.cjs migrate"
   },
   "dependencies": {
-    "drizzle-orm": "1.0.0-rc.4",
+    "drizzle-orm": "1.0.0-rc.5-ab785fc",
     "express": "5.2.1",
     "pg": "8.23.0",
     "ventojs": "2.4.0",
@@ -27,7 +27,7 @@
     "@types/node": "24.19.0",
     "@types/pg": "8.23.1",
     "@types/supertest": "7.2.1",
-    "drizzle-kit": "1.0.0-rc.4",
+    "drizzle-kit": "1.0.0-rc.5-ab785fc",
     "supertest": "7.3.0",
     "tsx": "4.23.15",
     "typescript": "7.0.2"
