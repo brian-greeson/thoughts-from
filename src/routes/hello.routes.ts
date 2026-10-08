@@ -1,6 +1,7 @@
-import { Router } from "express";
-import { showHello } from "../controllers/hello.controller.js";
+import { Router } from 'express';
+import { showHello } from '../controllers/hello.controller.js';
 
 export const helloRoutes = Router();
 
-helloRoutes.get("/", showHello);
+helloRoutes.get('/', showHello);
+helloRoutes.get('/up', showHello);

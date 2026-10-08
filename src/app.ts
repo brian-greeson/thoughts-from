@@ -8,6 +8,7 @@ export function createApp() {
 
   app.disable("x-powered-by");
   configureViews(app);
+  
   app.use(helloRoutes);
   app.use(errorHandler);
 
